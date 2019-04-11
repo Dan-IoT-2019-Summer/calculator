@@ -12,4 +12,19 @@ class CalculatorController{
                    @RequestParam("b") Integer b) {
             return String.valueOf(calculator.sum(a, b));
         }
+    @RequestMapping("/dif")
+        string dif(@RequestParam("a") Integer a,
+                   @RequestParam("b") Integer b){
+            return String.valueOf(calculator.dif(a,b));
+        }
+   @RequestMapping("/mul")
+        string dif(@RequestParam("a") Integer a,
+                   @RequestParam("b") Integer b){
+            return String.valueOf(calculator.mul(a,b));
+        }
+    @RequestMapping("/div")
+        string dif(@RequestParam("a") Integer a,
+                   @RequestParam("b") Integer b){
+            return String.valueOf(calculator.div(a,b)); 
+        }
 }
