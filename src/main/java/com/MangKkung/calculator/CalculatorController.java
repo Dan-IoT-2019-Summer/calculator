@@ -18,12 +18,12 @@ class CalculatorController{
             return String.valueOf(calculator.dif(a,b));
         }
    @RequestMapping("/mul")
-        String dif(@RequestParam("a") Integer a,
+        String mul(@RequestParam("a") Integer a,
                    @RequestParam("b") Integer b){
             return String.valueOf(calculator.mul(a,b));
         }
     @RequestMapping("/div")
-        String dif(@RequestParam("a") Integer a,
+        String div(@RequestParam("a") Integer a,
                    @RequestParam("b") Integer b){
             return String.valueOf(calculator.div(a,b)); 
         }
