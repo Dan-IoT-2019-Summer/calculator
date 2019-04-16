@@ -15,16 +15,16 @@ class CalculatorController{
     @RequestMapping("/dif")
         String dif(@RequestParam("a") Integer a,
                    @RequestParam("b") Integer b){
-            return String.valueOf(calculator.dif(a,b));
+            return String.valueOf(calculator.dif(a, b));
         }
    @RequestMapping("/mul")
         String mul(@RequestParam("a") Integer a,
                    @RequestParam("b") Integer b){
-            return String.valueOf(calculator.mul(a,b));
+            return String.valueOf(calculator.mul(a, b));
         }
     @RequestMapping("/div")
         String div(@RequestParam("a") Integer a,
                    @RequestParam("b") Integer b){
-            return String.valueOf(calculator.div(a,b)); 
+            return String.valueOf(calculator.div(a, b)); 
         }
 }
